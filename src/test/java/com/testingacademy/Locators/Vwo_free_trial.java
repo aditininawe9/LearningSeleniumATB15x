@@ -28,7 +28,7 @@ public class Vwo_free_trial {
         //Assertion
         WebElement error_message = driver.findElement(By.className("invalid-reason"));
 
-        Assert.assertEquals(error_message.getText(), "The email address you entered is incorrect.");
+        Assert.assertEquals(error_message.getText(), "The email address you entered is incorrect. ");
 
     }
 }
