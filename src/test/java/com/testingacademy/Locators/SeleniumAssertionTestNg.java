@@ -1,4 +1,4 @@
-package com.testingacademy;
+package com.testingacademy.Locators;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
