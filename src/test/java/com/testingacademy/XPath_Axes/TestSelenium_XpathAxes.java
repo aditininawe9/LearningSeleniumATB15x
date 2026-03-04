@@ -27,15 +27,7 @@ public class TestSelenium_XpathAxes {
         for(int i = 1; i <= row; i++){
             for (int j = 1; j <= column; j++) {
                 String dynamic_path = first_part+i+second_part+j+third_part;
-                System.out.println("-----abx---"+dynamic_path);
-                System.out.println("dkjfdkfjdk");
-                System.out.println("dkjfdkfjdk");
-                System.out.println("dkjfdkfjdk");
-                System.out.println("dkjfdkfjdk");
-                System.out.println("dkjfdkfjdk");
-                System.out.println("dkjfdkfjdk");
-                System.out.println("dkjfdkfjdk");
-                System.out.println("dkjfdkfjdk");
+                System.out.println("-----path---"+dynamic_path);
             }
         }
     }
