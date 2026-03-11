@@ -21,4 +21,17 @@ public class CommonToAll {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeInSeconds));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
     }
+
+    public static void waitForAlert(WebDriver driver, int timeInSeconds) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeInSeconds));
+        wait.until(ExpectedConditions.alertIsPresent());
+    }
+
+    public static void waitJVM(int time) {
+        try {
+            Thread.sleep(time);
+        }catch (InterruptedException e){
+            throw new RuntimeException(e);
+        }
+    }
 }
