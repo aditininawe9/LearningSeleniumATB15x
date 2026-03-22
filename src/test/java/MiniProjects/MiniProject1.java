@@ -1,5 +1,4 @@
 package MiniProjects;
-//package
 
 import com.testingacademy.CommonToAll;
 import io.qameta.allure.Description;
@@ -14,10 +13,6 @@ public class MiniProject1 extends CommonToAll {
     @Test
     public void testCloseModal() {
         WebDriver driver = new ChromeDriver();
-//        driver.navigate().to("https://www.makemytrip.com");
-//        System.out.println(driver.getTitle());
-//        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
-//        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@data-cy='closeModal']")));
         openBrowser(driver, "https://www.makemytrip.com");
         waitForVisiblity(driver, 3, "//span[@data-cy='closeModal']");
         closeBrowser(driver);
